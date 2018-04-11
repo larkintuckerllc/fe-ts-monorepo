@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Async component renders differently with not requested and error 1`] = `
+<div>
+  Error
+</div>
+`;
+
+exports[`Async component renders differently with not requested not error and 0 todos 1`] = `
+<div>
+  No Todos
+</div>
+`;
+
+exports[`Async component renders differently with requested 1`] = `
+<div>
+  Requested
+</div>
+`;

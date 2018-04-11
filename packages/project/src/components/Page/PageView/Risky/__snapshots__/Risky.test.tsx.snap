@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Risky component render snapshot 1`] = `
+<div>
+  <h2>
+    Risky
+  </h2>
+  <div>
+    <div
+      id="root"
+      style="background-color:black"
+    >
+      Fragile1
+    </div>
+    <div
+      class="my_global"
+    >
+      Fragile2
+    </div>
+  </div>
+</div>
+`;
