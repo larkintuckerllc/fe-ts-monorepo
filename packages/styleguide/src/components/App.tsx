@@ -1,5 +1,6 @@
 import { Button } from 'antd';
 import { Catalog, pageLoader } from 'catalog';
+import Hello from 'components/lib/Hello';
 import React from 'react';
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
       pages={[
         {
           content: pageLoader('intro.md'),
-          imports: { Button },
+          imports: { Button, Hello },
           path: '/',
           title: 'Introduction',
         },

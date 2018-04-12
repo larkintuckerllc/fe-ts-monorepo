@@ -64,6 +64,7 @@
     "antd": "^3.4.0",
     "babel-polyfill": "^6.26.0",
     "catalog": "^3.5.2",
+    "components": "^1.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
