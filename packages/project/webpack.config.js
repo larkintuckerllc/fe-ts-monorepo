@@ -129,13 +129,14 @@ module.exports = (env) => {
     },
     plugins,
     resolve: {
-      extensions: ['.js', '.json', '.ts', '.tsx'],
       alias: {
         APIS: path.resolve(__dirname, 'src/apis/'),
         COMPONENTS: path.resolve(__dirname, 'src/components/'),
         DUCKS: path.resolve(__dirname, 'src/ducks/'),
         STORE: path.resolve(__dirname, 'src/store/'),
       },
+      extensions: ['.js', '.json', '.ts', '.tsx'],
+      symlinks: false,
     },
   });
 };
