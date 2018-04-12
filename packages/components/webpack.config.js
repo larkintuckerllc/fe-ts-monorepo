@@ -92,4 +92,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['lib']),
   ],
+  resolve: {
+    extensions: ['.js', '.json', '.ts', '.tsx'],
+    symlinks: false,
+  },
 };

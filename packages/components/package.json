@@ -40,6 +40,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
-    "postinstall": "webpack --mode=production"
+    "postinstall": "webpack --mode=production",
+    "tsc": "tsc -p ./ --noEmit"
   }
 }
