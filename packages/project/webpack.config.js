@@ -47,7 +47,7 @@ module.exports = (env) => {
             getCustomTransformers: () => ({
               before: [tsImportPluginFactory({
                 libraryName: 'antd',
-                libraryDirectory: 'es',
+                libraryDirectory: 'lib',
                 style: true,
               })],
             }),
