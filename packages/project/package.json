@@ -1,5 +1,5 @@
 {
-  "name": "hello",
+  "name": "project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -65,6 +65,7 @@
     "@types/redux-immutable": "^3.0.38",
     "antd": "^3.4.0",
     "babel-polyfill": "^6.26.0",
+    "components": "^1.0.0",
     "immutable": "^3.8.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
