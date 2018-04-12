@@ -21,7 +21,6 @@ module.exports = {
     '^COMPONENTS/(.*)': '<rootDir>/src/components/$1',
     '^DUCKS/(.*)': '<rootDir>/src/ducks/$1',
     '^STORE/(.*)': '<rootDir>/src/store/$1',
-    '^react$': '<rootDir>/node_modules/react', // HACK FOR SYMLINKS FROM LERNA
   },
   collectCoverageFrom: [
     'src/**/*.{ts,tsx}',
