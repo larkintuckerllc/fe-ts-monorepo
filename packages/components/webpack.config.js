@@ -4,7 +4,7 @@ const tsImportPluginFactory = require('ts-import-plugin');
 
 module.exports = {
   entry: {
-    Hello: './src/Hello.tsx',
+    Hello: './src/Hello/Hello.tsx',
   },
   output: {
     path: path.resolve(__dirname, 'lib'),
@@ -41,6 +41,29 @@ module.exports = {
             options: {
               importLoaders: 1,
             },
+          },
+          {
+            loader: 'less-loader',
+          },
+        ],
+      },
+      {
+        test: /\.(css|less)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'typings-for-css-modules-loader',
+            options: {
+              importLoaders: 2,
+              modules: true,
+              namedExport: true,
+            },
+          },
+          {
+            loader: 'postcss-loader',
           },
           {
             loader: 'less-loader',

@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^8.2.0",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.0",
