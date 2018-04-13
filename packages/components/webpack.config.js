@@ -73,6 +73,9 @@ module.exports = (env) => {
               loader: 'typings-for-css-modules-loader',
               options: {
                 importLoaders: 2,
+                localIdentName: env.NODE_ENV === 'production'
+                  ? '[hash:base64]'
+                  : '[name]__[local]__[hash:base64:5]',
                 modules: true,
                 namedExport: true,
               },
