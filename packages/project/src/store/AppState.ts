@@ -20,7 +20,7 @@ export default class AppState extends Record(appStateDefault) {
     super(params);
   }
   public get<T extends keyof AppStateJS>(value: T): AppStateJS[T] {
-    return super.get(value);
+    return super.get(value, null);
   }
 }
 

@@ -2,7 +2,7 @@ import { List, Map, Record } from 'immutable';
 import Todo from './Todo';
 
 const todosStateDefault = {
-  byId: Map<number, Todo>({}),
+  byId: Map<number, Todo>(),
   errored: false,
   ids: List<number>([]),
   requested: false,
@@ -20,7 +20,7 @@ export default class TodosState extends Record(todosStateDefault) {
     super(params);
   }
   public get<T extends keyof TodosStateJS>(value: T): TodosStateJS[T] {
-    return super.get(value);
+    return super.get(value, null);
   }
 }
 

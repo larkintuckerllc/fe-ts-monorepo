@@ -1,4 +1,3 @@
-import Hello from 'components/lib/Hello';
 import { List } from 'immutable';
 import React from 'react';
 import AnotherCounter from './AnotherCounter';
@@ -28,7 +27,6 @@ const PageView = ({ add, adder, counter, decrement, increment }: PageViewProps) 
       <AnotherCounter />
       <Async />
       <Counter counter={counter} decrement={decrement} increment={increment} />
-      <Hello />
       <Listing add={add} items={adder.toJS()} />
       <Media />
       <Risky />

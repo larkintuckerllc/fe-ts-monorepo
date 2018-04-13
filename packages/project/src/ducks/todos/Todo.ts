@@ -19,6 +19,6 @@ export default class Todo extends Record(todoDefault) {
     super(params);
   }
   public get<T extends keyof TodoJS>(value: T): TodoJS[T] {
-    return super.get(value);
+    return super.get(value, null);
   }
 }

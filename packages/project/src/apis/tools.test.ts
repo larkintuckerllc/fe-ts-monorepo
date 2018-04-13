@@ -7,7 +7,7 @@ describe('todos api', () => {
         completed: false,
         id: 0,
         title: 'title',
-        userID: 0,
+        userId: 0,
       },
     ];
     const json = jest.fn().mockImplementation(() => Promise.resolve(todos));

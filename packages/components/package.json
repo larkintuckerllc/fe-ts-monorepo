@@ -39,6 +39,7 @@
   },
   "scripts": {
     "build": "webpack --mode=production",
+    "start": "webpack --mode=development --watch",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
     "postinstall": "webpack --mode=production",
     "tsc": "tsc -p ./ --noEmit"

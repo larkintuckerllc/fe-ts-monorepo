@@ -46,7 +46,7 @@ export const fetchTodos = () => async (dispatch: (action: AppAction) => void) =>
     const json = await fromTodos.fetchTodos();
     const reducer = (accumulator: List<Todo>, jsonTodo: TodoJS) =>
       accumulator.push(new Todo(jsonTodo));
-    const todos = json.reduce(reducer, List<Todo>([]));
+    const todos = json.reduce(reducer, List<Todo>([])) as List<Todo>;
     dispatch(fetchTodosResponse(todos));
   } catch {
     dispatch(fetchTodosResponse('500', true));
