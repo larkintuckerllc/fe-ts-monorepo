@@ -39,10 +39,10 @@
     "react-dom": "^16.2.0"
   },
   "scripts": {
-    "build": "webpack --mode=production",
-    "start": "webpack --mode=production --watch",
+    "build": "webpack --mode=production --env.NODE_ENV=production",
+    "start": "webpack --mode=production --env.NODE_ENV=development --watch",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
-    "postinstall": "webpack --mode=production",
+    "postinstall": "webpack --mode=production --env.NODE_ENV=production",
     "tsc": "tsc -p ./ --noEmit"
   }
 }
