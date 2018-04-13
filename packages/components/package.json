@@ -5,6 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^8.2.0",
+    "chokidar-cli": "^1.2.0",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.0",
@@ -40,7 +41,7 @@
   },
   "scripts": {
     "build": "webpack --mode=production --env.NODE_ENV=production",
-    "start": "webpack --mode=production --env.NODE_ENV=development --watch",
+    "start": "chokidar 'src/**' -c 'webpack --mode=production --env.NODE_ENV=development'",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
     "postinstall": "webpack --mode=production --env.NODE_ENV=production",
     "tsc": "tsc -p ./ --noEmit"
