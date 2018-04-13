@@ -11,6 +11,7 @@ module.exports = (env) => {
   return ({
     entry: {
       Hello: './src/Hello/Hello.tsx',
+      HelloPage: './src/Hello/HelloPage.tsx',
     },
     output: {
       path: path.resolve(__dirname, OUTPUT_PATH),
@@ -95,6 +96,7 @@ module.exports = (env) => {
       ],
     },
     externals: [
+      'catalog',
       'react',
       /antd\/.*/,
     ],

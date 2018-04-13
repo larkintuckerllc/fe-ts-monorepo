@@ -40,10 +40,12 @@
   "dependencies": {
     "@types/react": "^16.0.38",
     "@types/react-dom": "^16.0.4",
-    "antd": "^3.4.0"
+    "antd": "^3.4.0",
+    "catalog": "^3.5.2"
   },
   "peerDependencies": {
     "antd": "^3.4.0",
+    "catalog": "^3.5.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
