@@ -26,7 +26,7 @@ module.exports = (env) => {
     devServer: {
       contentBase: './dist',
     },
-    devtool: env.NODE_ENV === 'production' ? 'source-map' : 'cheap-eval-source-map',
+    devtool: 'source-map',
     entry: './src/index.tsx',
     module: {
       rules: [
