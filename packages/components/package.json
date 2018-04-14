@@ -54,7 +54,7 @@
     "coverage": "NODE_ENV=production jest --coverage",
     "start": "chokidar 'src/**' -c 'webpack --mode=production --env.NODE_ENV=development'",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
-    "postinstall": "webpack --mode=production --env.NODE_ENV=production && ln -s ../../../node_modules/jest node_modules/jest",
+    "postinstall": "webpack --mode=production --env.NODE_ENV=production",
     "tsc": "tsc -p ./ --noEmit",
     "test": "NODE_ENV=production jest"
   }
