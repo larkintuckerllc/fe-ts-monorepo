@@ -38,7 +38,7 @@ export const fetchTodos = async () => {
   const json = await response.json();
   const valid = validate(json);
   if (!valid) {
-    throw new Error();
+    throw new Error('500');
   }
   return json;
 };
