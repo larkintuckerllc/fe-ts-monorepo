@@ -12,10 +12,7 @@ module.exports = (env) => {
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
       'public/favicon.ico',
-      { from: 'public/*.md', flatten: true },
-    ], {
-      debug: 'info',
-    }),
+    ]),
     new HtmlWebpackPlugin({
       template: 'public/index.html',
     }),
@@ -132,12 +129,6 @@ module.exports = (env) => {
     },
     plugins,
     resolve: {
-      alias: {
-        APIS: path.resolve(__dirname, 'src/apis/'),
-        COMPONENTS: path.resolve(__dirname, 'src/components/'),
-        DUCKS: path.resolve(__dirname, 'src/ducks/'),
-        STORE: path.resolve(__dirname, 'src/store/'),
-      },
       extensions: ['.js', '.json', '.ts', '.tsx'],
       symlinks: false,
     },
