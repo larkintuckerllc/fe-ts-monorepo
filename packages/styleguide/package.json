@@ -8,6 +8,7 @@
     "build": "webpack --mode=production --env.NODE_ENV=production",
     "analyze": "webpack --mode=production --env.NODE_ENV=production --env.analyze",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "postinstall": "ln -s ../../../node_modules/jest node_modules/jest",
     "tsc": "tsc -p ./ --noEmit",
     "test": "NODE_ENV=production jest",
     "coverage": "NODE_ENV=production jest --coverage"
