@@ -1,3 +1,1 @@
-import PageView from './PageView';
-
-export default PageView;
+export { default } from './PageView';

@@ -1,3 +1,1 @@
-import WrappedView from './WrappedView';
-
-export default WrappedView;
+export { default } from './WrappedView';

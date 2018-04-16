@@ -19,11 +19,9 @@ export default class AsyncView extends Component<AsyncViewProps> {
     const { error, requested, todos } = this.props;
     if (requested) {
       return <div>Requested</div>;
-    }
-    if (error) {
+    } else if (error) {
       return <div>Error</div>;
-    }
-    if (todos.size === 0) {
+    } else if (todos.size === 0) {
       return <div>No Todos</div>;
     }
     return (

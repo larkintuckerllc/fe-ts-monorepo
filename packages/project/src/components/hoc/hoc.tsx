@@ -16,7 +16,7 @@ interface Options {
   debug?: boolean;
 }
 
-export const hoc = ({ debug = false }: Options = {}) => <TOriginalProps extends {}>(
+export default ({ debug = false }: Options = {}) => <TOriginalProps extends {}>(
   WrappedComponent:
     | React.ComponentClass<TOriginalProps & InjectedProps>
     | React.StatelessComponent<TOriginalProps & InjectedProps>

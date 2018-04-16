@@ -1,3 +1,1 @@
-import Wrapped from './Wrapped';
-
-export default Wrapped;
+export { default } from './Wrapped';

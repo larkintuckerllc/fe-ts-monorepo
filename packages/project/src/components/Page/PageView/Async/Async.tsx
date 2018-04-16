@@ -15,13 +15,11 @@ interface DispatchProps {
   fetchTodos(): void;
 }
 
-const mapStateToProps = (state: AppState) => {
-  return {
-    error: fromTodos.getTodosError(state),
-    requested: fromTodos.getTodosRequested(state),
-    todos: fromTodos.getTodos(state),
-  };
-};
+const mapStateToProps = (state: AppState) => ({
+  error: fromTodos.getTodosError(state),
+  requested: fromTodos.getTodosRequested(state),
+  todos: fromTodos.getTodos(state),
+});
 
 const mapDispatchToProps = {
   fetchTodos: fromTodos.fetchTodos,

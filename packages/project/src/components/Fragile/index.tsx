@@ -1,3 +1,1 @@
-import Fragile from './Fragile';
-
-export default Fragile;
+export { default } from './Fragile';

@@ -1,3 +1,1 @@
-import Risky from './Risky';
-
-export default Risky;
+export { default } from './Risky';

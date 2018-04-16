@@ -1,3 +1,1 @@
-import Stateful from './Stateful';
-
-export default Stateful;
+export { default } from './Stateful';

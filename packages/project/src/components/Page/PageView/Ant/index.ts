@@ -1,3 +1,1 @@
-import Ant from './Ant';
-
-export default Ant;
+export { default } from './Ant';

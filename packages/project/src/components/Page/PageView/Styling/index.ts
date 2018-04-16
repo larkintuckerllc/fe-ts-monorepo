@@ -1,3 +1,1 @@
-import Styling from './Styling';
-
-export default Styling;
+export { default } from './Styling';

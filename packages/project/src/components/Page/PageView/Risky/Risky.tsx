@@ -1,12 +1,10 @@
 import Fragile from 'COMPONENTS/Fragile';
 import React from 'react';
 
-const Risky = () => {
-  return (
-    <div>
-      <h2>Risky</h2>
-      <Fragile />
-    </div>
-  );
-};
+const Risky = () => (
+  <div>
+    <h2>Risky</h2>
+    <Fragile />
+  </div>
+);
 export default Risky;

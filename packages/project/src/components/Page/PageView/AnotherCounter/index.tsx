@@ -1,3 +1,1 @@
-import AnotherCounter from './AnotherCounter';
-
-export default AnotherCounter;
+export { default } from './AnotherCounter';

@@ -16,12 +16,10 @@ interface DispatchProps {
   increment(): void;
 }
 
-const mapStateToProps = (state: AppState) => {
-  return {
-    adder: fromAdder.getAdder(state),
-    counter: fromCounter.getCounter(state),
-  };
-};
+const mapStateToProps = (state: AppState) => ({
+  adder: fromAdder.getAdder(state),
+  counter: fromCounter.getCounter(state),
+});
 
 const mapDispatchToProps = {
   add: fromAdder.add,

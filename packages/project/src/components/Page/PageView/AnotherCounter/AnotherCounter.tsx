@@ -12,11 +12,9 @@ interface DispatchProps {
   increment(): void;
 }
 
-const mapStateToProps = (state: AppState) => {
-  return {
-    counter: fromCounter.getCounter(state),
-  };
-};
+const mapStateToProps = (state: AppState) => ({
+  counter: fromCounter.getCounter(state),
+});
 
 const mapDispatchToProps = {
   decrement: fromCounter.decrement,

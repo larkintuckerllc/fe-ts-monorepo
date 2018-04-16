@@ -1,4 +1,3 @@
-import Hello from 'components/lib/Hello';
 import { List } from 'immutable';
 import React from 'react';
 import AnotherCounter from './AnotherCounter';
@@ -21,21 +20,18 @@ interface PageViewProps {
   increment(): void;
 }
 
-const PageView = ({ add, adder, counter, decrement, increment }: PageViewProps) => {
-  return (
-    <Frame>
-      <Ant />
-      <AnotherCounter />
-      <Async />
-      <Counter counter={counter} decrement={decrement} increment={increment} />
-      <Hello />
-      <Listing add={add} items={adder.toJS()} />
-      <Media />
-      <Risky />
-      <Stateful />
-      <Styling />
-      <Wrapped text="test" />
-    </Frame>
-  );
-};
+const PageView = ({ add, adder, counter, decrement, increment }: PageViewProps) => (
+  <Frame>
+    <Ant />
+    <AnotherCounter />
+    <Async />
+    <Counter counter={counter} decrement={decrement} increment={increment} />
+    <Listing add={add} items={adder.toJS()} />
+    <Media />
+    <Risky />
+    <Stateful />
+    <Styling />
+    <Wrapped text="test" />
+  </Frame>
+);
 export default PageView;
