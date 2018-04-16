@@ -1,3 +1,1 @@
-import AsyncView from './AsyncView';
-
-export default AsyncView;
+export { default } from './AsyncView';

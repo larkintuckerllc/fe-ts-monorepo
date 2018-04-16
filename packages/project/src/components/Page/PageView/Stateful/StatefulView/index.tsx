@@ -1,3 +1,1 @@
-import StatefulView from './StatefulView';
-
-export default StatefulView;
+export { default } from './StatefulView';

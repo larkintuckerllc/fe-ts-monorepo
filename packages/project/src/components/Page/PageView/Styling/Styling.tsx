@@ -1,13 +1,13 @@
 import React from 'react';
-import stylesLess from './styles.less';
+import styles from './styles.less';
 
 const Styling = () => (
-  <div id={stylesLess.root}>
+  <div id={styles.root}>
     <h2 className="my_global">Styling</h2>
-    <div id={stylesLess.rootContainer}>
-      <div className={stylesLess.rootContainerItem}>One</div>
-      <div className={stylesLess.rootContainerItem}>Two</div>
-      <div className={stylesLess.rootContainerItem}>Three</div>
+    <div id={styles.rootContainer}>
+      <div className={styles.rootContainerItem}>One</div>
+      <div className={styles.rootContainerItem}>Two</div>
+      <div className={styles.rootContainerItem}>Three</div>
     </div>
   </div>
 );
