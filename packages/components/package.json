@@ -2,7 +2,7 @@
   "name": "components",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "CC0",
   "devDependencies": {
     "@types/enzyme": "^3.1.9",
     "@types/enzyme-adapter-react-16": "^1.0.2",
