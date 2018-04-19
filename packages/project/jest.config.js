@@ -15,8 +15,8 @@ module.exports = {
     'node',
   ],
   moduleNameMapper: {
-    '\\.(css|less)$': '<rootDir>/styleMock.js',
-    '\\.(jpg|png)$': '<rootDir>/empty-module.js',
+    '\\.(css|less)$': '<rootDir>/jest_stubs/style-module.js',
+    '\\.(jpg|png)$': '<rootDir>/jest_stubs/empty-module.js',
     '^APIS/(.*)': '<rootDir>/src/apis/$1',
     '^COMPONENTS/(.*)': '<rootDir>/src/components/$1',
     '^DUCKS/(.*)': '<rootDir>/src/ducks/$1',
