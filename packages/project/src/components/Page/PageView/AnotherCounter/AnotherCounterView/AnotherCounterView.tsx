@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './styles.less';
 
 interface AnotherCounterProps {
   counter: number;
@@ -13,10 +14,10 @@ export default class AnotherCounter extends Component<AnotherCounterProps> {
       <div>
         <h2>Connected</h2>
         <div>{counter.toString()}</div>
-        <button key="test_increment" onClick={increment}>
+        <button id={styles.increment} onClick={increment}>
           +
         </button>
-        <button key="test_decrement" onClick={decrement}>
+        <button id={styles.decrement} onClick={decrement}>
           -
         </button>
       </div>

@@ -14,7 +14,6 @@ export default class Stateful extends Component<{}, StatefulState> {
     const { counter } = this.state;
     return (
       <StatefulView
-        key="test_stateful_view"
         counter={counter}
         decrement={this.handleDecrementClick}
         increment={this.handleIncrementClick}

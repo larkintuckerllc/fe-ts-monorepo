@@ -2,6 +2,7 @@ import Enzyme, { shallow } from 'enzyme';
 import enzymeAdapterReact16 from 'enzyme-adapter-react-16';
 import React from 'react';
 import Stateful from './Stateful';
+import StatefulView from './StatefulView';
 
 Enzyme.configure({ adapter: new enzymeAdapterReact16() });
 
@@ -17,7 +18,7 @@ describe('Stateful component', () => {
     const {} = getDefaultProps();
     const wrapper = shallow(<Stateful />);
     const result = 0;
-    const testStatefulView = wrapper.findWhere(node => node.key() === 'test_stateful_view');
+    const testStatefulView = wrapper.find(StatefulView);
     expect(testStatefulView.props().counter).toEqual(result);
   });
 
@@ -25,10 +26,10 @@ describe('Stateful component', () => {
     const {} = getDefaultProps();
     const wrapper = shallow(<Stateful />);
     const result = 1;
-    let testStatefulView = wrapper.findWhere(node => node.key() === 'test_stateful_view');
+    let testStatefulView = wrapper.find(StatefulView);
     testStatefulView.props().increment();
     wrapper.update();
-    testStatefulView = wrapper.findWhere(node => node.key() === 'test_stateful_view');
+    testStatefulView = wrapper.find(StatefulView);
     expect(testStatefulView.props().counter).toEqual(result);
   });
 
@@ -36,10 +37,10 @@ describe('Stateful component', () => {
     const {} = getDefaultProps();
     const wrapper = shallow(<Stateful />);
     const result = -1;
-    let testStatefulView = wrapper.findWhere(node => node.key() === 'test_stateful_view');
+    let testStatefulView = wrapper.find(StatefulView);
     testStatefulView.props().decrement();
     wrapper.update();
-    testStatefulView = wrapper.findWhere(node => node.key() === 'test_stateful_view');
+    testStatefulView = wrapper.find(StatefulView);
     expect(testStatefulView.props().counter).toEqual(result);
   });
 });

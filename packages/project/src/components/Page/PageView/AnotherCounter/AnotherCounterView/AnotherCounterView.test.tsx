@@ -2,6 +2,7 @@ import Enzyme, { shallow } from 'enzyme';
 import enzymeAdapterReact16 from 'enzyme-adapter-react-16';
 import React from 'react';
 import AnotherCounterView from './AnotherCounterView';
+import styles from './styles.less';
 
 Enzyme.configure({ adapter: new enzymeAdapterReact16() });
 
@@ -23,7 +24,7 @@ describe('Counter component', () => {
       <AnotherCounterView counter={counter} decrement={decrement} increment={increment} />
     );
     const callsLength = 1;
-    const testDecrement = wrapper.findWhere(node => node.key() === 'test_decrement');
+    const testDecrement = wrapper.find(`#${styles.decrement}`);
     testDecrement.simulate('click');
     expect(decrement.mock.calls).toHaveLength(callsLength);
   });
@@ -34,7 +35,7 @@ describe('Counter component', () => {
       <AnotherCounterView counter={counter} decrement={decrement} increment={increment} />
     );
     const callsLength = 1;
-    const testIncrement = wrapper.findWhere(node => node.key() === 'test_increment');
+    const testIncrement = wrapper.find(`#${styles.increment}`);
     testIncrement.simulate('click');
     expect(increment.mock.calls).toHaveLength(callsLength);
   });
