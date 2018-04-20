@@ -11,7 +11,7 @@ module.exports = (env) => {
   const plugins = [
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
-      { from: 'public/favicon.ico' },
+      'public/favicon.ico',
     ]),
     new HtmlWebpackPlugin({
       template: 'public/index.html',
