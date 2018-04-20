@@ -1,3 +1,6 @@
+const lessModifyVarsTemplate = require('../../less-modify-vars.template');
+
 module.exports = {
-  '@primary-color': '#1DA57A',
+  ...lessModifyVarsTemplate,
+  // PUT OVERRIDES HERE
 };
