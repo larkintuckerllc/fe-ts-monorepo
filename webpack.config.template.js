@@ -54,7 +54,7 @@ module.exports = ({ env, lessModifyVars, rootDir }) => {
           },
         },
         {
-          test: /node_modules[//\/].*\.(css|less)$/,
+          test: /node_modules[\\\/].*\.(css|less)$/,
           use: [
             {
               loader: env.NODE_ENV === 'production' ?
