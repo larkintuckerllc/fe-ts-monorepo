@@ -1,6 +1,7 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
 const tsImportPluginFactory = require('ts-import-plugin');
+const lessModifyVars = require('./less-modify-vars');
 
 const OUTPUT_PATH = 'lib';
 module.exports = (env) => {
@@ -86,6 +87,9 @@ module.exports = (env) => {
             },
             {
               loader: 'less-loader',
+              options: {
+                modifyVars: lessModifyVars,
+              },
             },
           ],
         },

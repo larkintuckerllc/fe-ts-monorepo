@@ -1,7 +1,7 @@
 import { Button } from 'antd';
 import React from 'react';
 import catHungryIconPng from './cat-hungry-icon.png';
-import stylesLess from './styles.less';
+import styles from './styles.less';
 
 declare global {
   interface Function {
@@ -9,10 +9,11 @@ declare global {
   }
 }
 const Hello = () => (
-  <div id={stylesLess.root}>
+  <div id={styles.root}>
     <h2>Hello World</h2>
     <Button type="primary">Hello Button</Button>
     <img src={catHungryIconPng} />
+    <div id={styles.rootHello}>Hello</div>
   </div>
 );
 Hello.displayName = 'Hello';
